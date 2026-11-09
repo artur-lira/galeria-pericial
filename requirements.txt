@@ -1,0 +1,10 @@
+PySide6>=6.6
+Pillow>=10.0
+numpy>=2.0               # np.bitwise_count
+opencv-python-headless>=4.9
+pillow-heif>=0.16        # HEIC / HEIF / AVIF
+rawpy>=0.19              # RAW de câmeras
+python-docx>=1.1         # relatório DOCX
+# PyTorch/torchvision são instalados pelo build.bat (CUDA ou CPU):
+#   CUDA: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#   CPU : pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu

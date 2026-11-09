@@ -1,0 +1,22 @@
+# ambiente e build
+.venv/
+build/
+dist/
+*.spec
+__pycache__/
+*.pyc
+
+# pesos da CNN (baixados pelo build.bat; ~100 MB)
+modelos/
+
+# artefatos que não são código-fonte
+*.zip
+captura_*.png
+exemplo_relatorio.*
+
+# nunca versionar material de exames, índices ou exportações
+indices/
+exportacao_*/
+*.db
+*.db-wal
+*.db-shm
