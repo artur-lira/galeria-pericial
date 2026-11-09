@@ -1,4 +1,6 @@
-# Galeria Pericial 2.0
+# Galeria Pericial: manual completo
+
+Visão geral, instalação e uso rápido estão no [README](README.md). Este manual detalha todas as opções.
 
 Programa para Windows que abre uma pasta (com subpastas) contendo até centenas de milhares de imagens.
 Ele permite:
@@ -26,7 +28,7 @@ O programa detecta na inicialização quantas GPUs NVIDIA existem e quanta memó
 
 | Situação | Comportamento |
 |---|---|
-| 1, 2 ou 3 RTX A4000 (16 GB) | Usa todas. Os lotes da CNN são distribuídos em rodízio entre as placas, e o índice vetorial é dividido igualmente entre elas (cerca de 100 mil imagens por placa com 3 GPUs) |
+| 1, 2 ou 3 RTX A4000 (16 GB) | Usa todas. Cada lote da CNN vai para a primeira placa livre, e o índice vetorial é dividido igualmente entre elas (cerca de 100 mil imagens por placa com 3 GPUs) |
 | GPUs de tamanhos diferentes | O índice é dividido na proporção da memória de cada placa |
 | Uma GPU falha no autoteste | Só ela é descartada, as demais continuam, e a barra de status informa qual saiu |
 | Nenhuma GPU funciona | O programa passa para a CPU automaticamente |
